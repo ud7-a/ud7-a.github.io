@@ -11,6 +11,7 @@ body {
     background-color: #1e1c2a;
     display: flex;
     flex-direction: column;
+    overflow-x:hidden;
 }
 
 ::selection {
