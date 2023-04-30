@@ -1,0 +1,739 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1e1c2a;
+    display: flex;
+    flex-direction: column;
+}
+
+::selection {
+    background-color: rgb(201, 131, 3);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a {
+    margin-left: 30px;
+    color: white;
+    font-size: larger;
+}
+
+nav A:HOVER {
+    color: orange;
+    transition: .2s;
+}
+
+#menu-icon {
+    display: none;
+}
+
+header {
+    background-color: #1e1c2a;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+}
+
+header img {
+    zoom: 8%;
+    position: relative;
+    left: 120px;
+    transition: .4s;
+}
+
+
+
+/*-----------home-----------*/
+
+.home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.home img {
+    zoom: 90%;
+    margin-left: 60px;
+}
+
+.home h1 {
+    font-size: 65px;
+    color: orange;
+    width: max-content;
+}
+
+.home h2 {
+    position: relative;
+    top: 5px;
+    color: white;
+    font-size: 38px;
+    margin-bottom: 30px;
+    width: max-content;
+
+}
+
+button a {
+    color: white;
+}
+
+button {
+    color: white;
+    background-color: rgb(221, 144, 2);
+    padding: 8px;
+    border-radius: 10px;
+    zoom: 130%;
+    transition: .4s;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.2);
+}
+
+
+
+/*-----------About-------------*/
+
+
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.about h2 {
+    position: relative;
+    top: 5px;
+    color: white;
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+.about p {
+    color: orange;
+    font-size: 27px;
+    font-weight: 700;
+    margin-bottom: -20px;
+}
+
+.about img {
+    margin-right: 90px;
+}
+
+.lorem1 {
+    color: white;
+    font-size: 18px;
+}
+
+.about button {
+    margin-top: 30px;
+}
+
+
+
+/*-----------Menu-------------*/
+
+
+
+.menu {
+    height: 100vh;
+    flex-wrap: wrap;
+
+}
+
+.menu p {
+    text-align: center;
+    color: orange;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.menu h1 {
+    color: white;
+    font-size: 34px;
+    text-align: center;
+}
+
+.menu-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: antiquewhite;
+    padding: 40px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 50px;
+    position: relative;
+    transition: .5s;
+    margin-right: 20px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card p {
+    color: #1e1b27;
+    font-weight: 500;
+    font-size: 22px;
+    margin: 7px 0px;
+}
+
+.card h3 {
+    text-align: center;
+    font-size: x-large;
+}
+
+.card i {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: orange;
+    padding: 10px;
+    border-radius: 00px 20px 0px 10px;
+}
+
+
+
+/*-----------Services-------------*/
+
+
+
+.services {
+    height: 73vh;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.services p {
+    color: orange;
+    font-size: 27px;
+    font-weight: 700;
+
+}
+
+.services h1 {
+    color: white;
+    font-size: 34px;
+}
+
+.services-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.s-card {
+    padding: 40px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+.s-card img {
+    width: 100px;
+    height: 100px;
+}
+
+.s-card p {
+    font-size: 20px;
+    color: white;
+    display: inline-flex;
+    width: 400px;
+}
+
+.s-card h1 {
+    color: orange;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+
+
+/*-----------Contant-------------*/
+
+
+
+.contact {
+    height: 100vh;
+}
+
+.links {
+    display: inline-flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.links a {
+    color: rgb(95, 95, 107);
+    padding: 7px;
+    width: fit-content;
+    transition: .4s;
+    font-size: 18px;
+}
+
+.links a:hover {
+    color: #c0c0c0;
+    transform: scale(1.1);
+}
+
+.links .h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+    cursor: default;
+    margin-bottom: 10px;
+    font-size: 24px;
+    transition: 0s;
+}
+
+.links .h3:hover {
+    color: white;
+    transform: scale(1);
+}
+
+.h3::after {
+    content: '';
+    width: 100%;
+    background: rgb(175, 114, 0);
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+}
+
+a i {
+    color: white;
+    font-size: 25px;
+    background-color: rgb(185, 122, 3);
+    border-radius: 50%;
+    padding: 10px;
+    transition: .4s;
+}
+
+.insta i {
+    font-size: 27px;
+}
+
+a:hover i {
+    color: #000;
+    background-color: white;
+    transform: scale(1.2);
+}
+
+
+
+/*-----------M Q-------------*/
+
+
+
+
+@media(max-width:1740px) {
+    .card {
+        zoom: 75%;
+    }
+}
+
+@media(max-width:1538px) {
+
+    .home h1 {
+        font-size: 40px;
+        margin-left: 90px;
+    }
+
+    .home h2 {
+        font-size: 30px;
+        margin-left: 90px;
+
+    }
+
+    .home button {
+        margin-left: 70px;
+    }
+
+    .home img {
+        zoom: 70%;
+    }
+
+    .about {
+        display: flex;
+        padding: 20px;
+    }
+
+}
+
+
+@media(max-width:1400px) {
+
+    .s-card p {
+        font-size: 18px;
+        width: 180px;
+    }
+}
+
+
+@media(max-width:1300px) {
+    .home {
+        height: 60vh;
+    }
+
+    .home img {
+        zoom: 60%;
+        width: 700px;
+    }
+
+    .home h1,
+    .home h2,
+    .home button {
+        margin-right: 70px;
+        margin-left: 0px;
+    }
+
+    .about img {
+        zoom: 80%;
+    }
+
+    .menu {
+        height: 80vh;
+    }
+
+    .card {
+        zoom: 66%;
+    }
+}
+
+@media(max-width:1142px) {
+    .home h2 {
+        font-size: 30px;
+        width: max-content;
+    }
+
+    .home h1 {
+        width: max-content;
+        font-size: 35px;
+
+    }
+
+    .home img {
+        margin-top: 120px;
+    }
+}
+
+@media(max-width:1140px) {
+    .home img {
+        zoom: 60%;
+        width: 700px;
+    }
+
+    .about img {
+        zoom: 74%;
+    }
+
+    .menu h1 {
+        font-size: 27px;
+    }
+
+    .card {
+        margin-right: 50px;
+        zoom: 60%;
+    }
+}
+
+@media(max-width:1060px) {
+    .home h2 {
+        font-size: 30px;
+        width: max-content;
+    }
+}
+
+@media(max-width:1040px) {
+
+    .home {
+        flex-direction: column;
+        margin-top: 70px;
+        height: 100vh;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .home h1,
+    .home h2,
+    .home button {
+        margin-right: 0;
+    }
+
+    .home h1 {
+        text-align: center;
+        font-size: 55px;
+    }
+
+    .home img {
+        margin-left: 0;
+    }
+
+    .about {
+        display: block;
+        text-align: center;
+        margin-top: 70px;
+        height: 100vh;
+    }
+
+    .about img {
+        margin-right: 0;
+    }
+
+    .about h2 {
+        font-size: 28px;
+    }
+
+    .menu-cards {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 10px;
+        height: 100vh;
+    }
+
+    .services {
+        margin-top: 500px;
+        text-align: center;
+        margin-bottom: 800px;
+    }
+
+    .services-card {
+        display: flex;
+        flex-direction: column;
+        margin-top: -30px;
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .s-card p {
+        width: 290px;
+        font-size: 20px;
+    }
+
+    .card {
+        margin-right: 0px;
+    }
+
+    .menu h1 {
+        margin-bottom: 80px;
+    }
+}
+
+header img {
+    zoom: 7%;
+}
+
+@media(max-width:790px) {
+
+    .services h1 {
+        font-size: 27px;
+    }
+}
+
+@media(max-width:790px) {
+
+    header {
+        display: sticky;
+        text-align: center;
+        height: 50%;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #363249;
+        z-index: 1;
+        transition: .3s;
+        top: -477px;
+    }
+
+    .header.active {
+        top: 0px;
+    }
+
+    #menu-icon {
+        display: initial;
+        z-index: 555;
+        position: fixed;
+        right: 0px;
+        margin: 10px 10px 0px 0px;
+        zoom: 200%;
+        cursor: pointer;
+        width: fit-content;
+    }
+
+    nav a {
+        display: block;
+        margin-top: 35px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media(max-width:450px) {
+    .home img {
+        zoom: 30%;
+    }
+
+    .about img {
+        zoom: 40%;
+    }
+}
+
+@media(max-height:850px) {
+
+    .home,
+    .about,
+    .menu,
+    .services,
+    .contact {
+        height: 120vh;
+
+    }
+
+    .home img {
+        zoom: 70%;
+    }
+
+    .home h1 {
+        font-size: 50px;
+    }
+
+    .about img {
+        zoom: 70%;
+    }
+
+    .about h2 {
+        font-size: 36px;
+    }
+
+    .s-card {
+        margin-bottom: -30px;
+    }
+}
+
+@media(max-height:790px) {
+
+    nav a {
+        font-size: 17px;
+    }
+
+    .home img {
+        zoom: 50%;
+    }
+
+    .menu h1 {
+        margin-bottom: 170px;
+    }
+
+}
+
+@media(max-height:750px) {
+.header img{
+    margin-bottom: -50px;
+}
+
+    nav a {
+        margin-bottom: -1px;
+        font-size: large;
+        margin-top: 20px;
+    }
+}
+
+@media(max-height:700px) {
+
+    .home,
+    .about,
+    .menu,
+    .services,
+    .contact {
+        height: 140vh;
+    }
+
+    .menu {
+        margin-top: 200px;
+    }
+}
+
+@media(max-height:630px) {
+
+    .home,
+    .about,
+    .menu,
+    .services,
+    .contact {
+        height: 160vh;
+
+    }
+
+    .menu h1 {
+        margin-bottom: 250px;
+    }
+
+    .header{
+        height: 115vh; 
+        top: -800px;
+    }
+
+    nav a{
+        margin-bottom: 30px;
+        font-size: 30px;
+    }
+
+    header img{
+        zoom: 12%;
+    }
+}
+
+@media(max-height:540px) {
+
+    .home,
+    .about,
+    .menu,
+    .services,
+    .contact {
+        height: 190vh;
+    }
+
+    .home{
+        margin-top: -70px;
+    }
+
+    body{
+        zoom: 90%;
+    }
+}
