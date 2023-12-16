@@ -13,13 +13,13 @@
 
 <body>
 
- <i class="fas fa-bars" style="color: #ffffff;" id="menu-icon"></i>
+  <i class="fas fa-bars" style="color: #ffffff;" id="menu-icon"></i>
 
   <header class="header">
     <a href="#"><img src="img/logo.png"></a>
     <nav>
       <a href="#Home">Home</a>
-     <a href="#About">About</a> 
+      <a href="#About">About</a>
       <a href="#Menu">Menu</a>
       <a href="#Services">Services</a>
       <a href="#Contant">Contant</a>
@@ -32,12 +32,12 @@
 
   <section class="home" id="Home">
     <div>
-      <h1>BURGER kING <br>
-        <h2> Foods are the <br> most precious things </h2>
+      <h1>BURGER kING<br>
+        <h2>Foods are the<br>most precious things</h2>
       </h1>
       <button><a href="#Menu" class="btn">Today's Menu</a></button>
     </div>
-    <img src="img/home.png">
+    <img src="img/home.png" draggable="false">
   </section>
 
 
@@ -142,64 +142,50 @@
 
   <!------Contant------>
 
-  <section class="contant-3" id="Contant">
+  <section class="contant" id="Contant">
 
-    <div class="links">
-      <a class="h3">Links</a>
-      <a href="#Home">Home</a>
-      <a href="#About">About</a>
-      <a href="#Menu">Menu</a>
-      <a href="#Services">Services</a>
-      <a href="#Contant">Contant</a>
-    </div>
+      <div class="links">
+        <a class="h3">Links</a>
+        <a href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#Menu">Menu</a>
+        <a href="#Services">Services</a>
+        <a href="#Contant">Contant</a>
+      </div>
+      <div>
+        <div class="links">
+          <a class="h3">Information</a>
+          <a href="#About">About Us</a>
+          <a href="#Services">Delivery Information</a>
+          <a href="#Menu">Menu</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
 
-    <div class="links">
-      <a class="h3">Information</a>
-      <a href="#About">About Us</a>
-      <a href="#Services">Delivery Information</a>
-      <a href="#Menu">Menu</a>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms & Conditions</a>
-    </div>
+      <div>
+        <div class="links" id="contact">
+          <a class="h3">Contact Us</a>
+          <a class="tik" target="_blank" href="https://www.tiktok.com/@ud7a">
+            <i class="fab fa-tiktok"></i></a>
 
-    <div class="links">
-      <a class="h3">Contact Us</a>
-      <a class="tik" target="_blank" href="https://www.tiktok.com/@ud7a">
-        <i class="fab fa-tiktok"></i></a>
+          <a class="youtube" target="_blank" href="https://www.youtube.com/channel/UCkvaQafGyEFNW60Tdc-jxXw">
+            <i class="fab fa-youtube"></i></a>
 
-      <a class="youtube" target="_blank" href="https://www.youtube.com/channel/UCkvaQafGyEFNW60Tdc-jxXw">
-        <i class="fab fa-youtube"></i></a>
-
-      <a class="insta" target="_blank" href="https://www.instagram.com/u.d7.a/">
-        <i class="fab fa-instagram"></i></a>
-    </div>
-
+          <a class="insta" target="_blank" href="https://www.instagram.com/u.d7.a/">
+            <i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
   </section>
 
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
-    $(document).ready(function () {
-      $("a").on("click", function (event) {
-        if (this.hash !== "") {
-          event.preventDefault();
-          var hash = this.hash;
-          $("html, body").animate(
-            {
-              scrollTop: $(hash).offset().top,
-            }, 800, function () { window.location.hash = hash; }
-          );
-        }
-      });
-    });
-
     let menu = document.querySelector("#menu-icon");
     let header = document.querySelector("header");
     menu.addEventListener("click", function () {
       header.classList.toggle("active");
     });
-    window.onscroll = () => {
+
+    onscroll = () => {
       header.classList.remove("active");
     };
   </script>
